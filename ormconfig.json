@@ -1,0 +1,16 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "test_codex",
+    "entities": ["src/entity/*{.ts,.js}"],
+    "logging": true,
+    "synchronize": true,
+    "migrations": ["/migrations/**/*{.ts,.js}"],
+    "cli": {
+      "migrationsDir": "src/migrations"
+    },
+    "migrationsRun": true
+  }
